@@ -1,6 +1,12 @@
 # E2E test
 
-An end-to-end test is used to ensure the sample code works properly. Every sample code folder should have a corresponding E2E test under `test/e2e/` directory.
+An end-to-end test is used to ensure the sample code works properly. Every sample code folder should have a corresponding E2E test under `test/e2e/` directory. All go test code files in `test/e2e` directory must be put in `e2e` package:
+
+```go
+package e2e
+
+import ...
+```
 
 ## Composing E2E tests
 

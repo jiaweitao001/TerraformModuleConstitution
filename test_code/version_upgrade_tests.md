@@ -1,6 +1,12 @@
 # Version upgrade tests
 
-To avoid breaking changes after a minor version upgrade, we need a version upgrade test after it.
+To avoid breaking changes after a minor version upgrade, we need a version upgrade test after it. Every sample code folder should have a corresponding version upgrade test under `test/upgrade/` directory. All go test code files in `test/upgrade` directory must be put in `upgrade` package:
+
+```go
+package upgrade
+
+import ...
+```
 
 The logics of version upgrade tests are implemented in E2E test helper: [github.com/Azure/terraform-module-test-helper](https://github.com/Azure/terraform-module-test-helper).
 
